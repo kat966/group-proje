@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <style>
+.header  {
+    
+    
+    background-color: rgb(39, 219, 57);
+}
+.header img{
+    margin: 0px 10px;
+    float: left;
+}
+.header p {
+    float: left;
+  margin: 0px 10px;
+}
+.NAV {
+    background-color: black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 130%;
+    font-style: italic;
+    box-shadow: 0px 17px 59px 11px  rgb(1, 174, 1);
+    -webkit-box-shodaw: 0px 17px 11px  rgb(1, 174, 1);
+    -moz-box-shadow: 0px 17px 59px 11px rgba(1, 174, 1);
+    display:flexbox;
+    background: -o-linear-gradient(45deg, green, rgb(42, 236, 42));
+    border-radius: 8px;
+    transition: 0.8s ease;
+    gap: 30px;
+    align-items: center;
+    transition: 2.0s;
+  }
+
+  .NAV li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .NAV a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    box-shadow: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+  }
+
+  .NAV a:hover {
+    background-color:white;
+    color: black;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: color 1.0s;
+    z-index: 1;
+    transition: 0.45;
+    border-radius: 10px;
+  }
+  .footer-section{
+  text-align: center;
+  background-color: rgb(39, 219, 57);
+  color: white;
+  font-size: 111%;
+}
+.footer-section ul {
+  list-style: none;
+}
+.links li {
+  
+    display: inline-block;
+    background-color: snow;
+    list-style: none;
+    font-style: italic;
+    font-size: 200%;
+    text-align: left;
+    margin: 1%;
+    color: red;
+    border: 50%;
+    
+  }
+  #contact {
+    
+    background: #f9f9f9;
+    padding: 99px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 5px solid black;
+    box-shadow: 50px 40px 40px rgba(2, 2, 2, 0.2);
+    text-align: center;
+    width:100%;
+    height: 100%;
+    border: 8px green double;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    
+}
+
+
+#contact h2 {
+    font-size: 350%;
+    color: #333;
+    margin-bottom: 5px;
+   
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color:rgb(20, 172, 7);
+    padding: 0%;
+    margin-top: -103px;
+}
+.contact-form .form-group {
+   max-width: 400px;
+  margin: 10px 250px;
+  padding: 10px 50px;
+  size-adjust:inherit;
+  padding: 3px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 166, 33, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  background-color: rgb(39, 219, 57);
+   
+
+}
+.contact-form .send-btn{
+  
+  fill: none;
+  stroke-width: var(--sw, 3px);
+  stroke-linecap:round;
+  stroke-linejoin: round;
+  font-weight: 400px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2.5px;
+  width: 160px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-shadow: 5px #333;
+  text-decoration: solid;
+  radius : 5px;
+  
+}
+.footer-section li{
+  display:grid;
+  color:rgb(1, 174, 1);
+  flex-wrap: wrap;
+  list-style: none;
+  color: white;
+  text-align:left ;
+
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .NAV ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact{
+    width: 100%;
+    height: 100%;
+  }
+  .contact-form .form-group{
+    width: 100%;
+    margin: 0%;
+    
+  }
+
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+}
+
+
+
+        </style>
+        <title>APRENDO INTERNATIONAL</title>
+    </head>
+<body background="school logo.png">
+    <header class="header">
+        <P> <img src = "icons8-graduation-cap-48.png" >
+            <h1>APRENDO INTERNATIONAL</h1></P>
+        <nav class="NAV">
+        <ul>
+            <li><a href="home pg.html">HOME</a></li>
+            <li><a href="about us.html">ABOUT US</a></li>
+              <li><a href="acadaemics.html">ACADEMICS</a></li>
+              <li><a href="gallary.html">GALLARY</a></li>
+              <li><a href="news.html">NEWS & EVENTS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+          </nav>
+    </header>
+<section class="top">
+          <ul  class="links">
+            <li>   <a href="https://www.facebook.com/share/1FSWGa1ajX/?mibextid=wwXIfr"><img src="100.png"></a></li> 
+            <li>  <a href="mahaletsamasentle71@gmail.com "> <img src="gmail.png"></a></li>
+            <li> <a href="https://wa.me/57866269"> <img src="whatsapp.png"></a></li>
+            <li>  <a href="https://pin.it/3o0ZGzs87"> <img src="pinterest.png"></a></li>
+            <li>  <a href="https://vm.tiktok.com/ZMSerKENc/"> <img src="tik-tok.png"></a></li>
+          </ul>
+        </section>
+      
+ 
+
+ 
+        <section id="contact">
+    <h2>Contact us</h2>
+    <form method="post" class="contact-form">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="send-btn">Send Message</button>
+    </form>
+
+</section>
+<footer class="footer-section">
+  
+      <p>© Aprendo International. All rights reserved.</p>
+        <ul>
+        <li> Monehela Malebapo student # 901019883</li>
+        <li>Katleho Jankie student # 901019922</li>
+        <li>Tlhohonolofatso Ranthimo student # 901019938</li>
+        <li>Atang Mokabo student # 901019849</li>
+        <li>Mahanetsa 'Masentle student # 901019863</li>
+        <li>Mohale Maphokoane student # 901019906</li>
+        </ul>
+      
+    </footer>
+
+</body>
+</html>

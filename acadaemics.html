@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <style>
+.header  {
+    
+    
+    background-color: rgb(39, 219, 57);
+}
+.header img{
+    margin: 0px 10px;
+    float: left;
+}
+.header p {
+    float: left;
+  margin: 0px 10px;
+}
+.NAV {
+    background-color: black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 130%;
+    font-style: italic;
+     box-shadow: 0px 17px 59px 11px  rgb(1, 174, 1);
+    -webkit-box-shodaw: 0px 17px 11px  rgb(1, 174, 1);
+    -moz-box-shadow: 0px 17px 59px 11px rgba(1, 174, 1);
+    display:flexbox;
+    background: -o-linear-gradient(45deg, green, rgb(42, 236, 42));
+    border-radius: 8px;
+    transition: 0.8s ease;
+    gap: 30px;
+    align-items: center;
+    transition: 2.0s;
+  }
+
+  .NAV li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .NAV a {
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .NAV a:hover {
+    background-color:white;
+    color: black;
+    position: relative;
+    padding: 0.5rem 1rem;
+    z-index: 1;
+    transition: 0.45;
+    border-radius: 10px;
+  }
+.sec1
+{
+  display: block;
+  background-color: rgb(39, 219, 57);
+  text-align: center;
+}
+.sec2{
+  background-color:aliceblue;
+  float: left;
+  margin:0%;
+  padding: 95px 60px;
+  margin: 10px ;
+  
+}
+.sec3{
+  background-color:aliceblue;
+  float:left;
+  position: relative;
+  padding: 50px 50px;
+  margin: 10px 25px;
+}
+.sec4{
+  background-color:aliceblue;
+  margin: 2%;
+  float: inline-start;
+  position: relative;
+padding: 35px 40px;
+
+
+}
+.sec4 .table1{
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px;
+  margin: 4%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+ 
+
+}
+.sec4 h3{
+  text-align: center;
+}
+
+.table1 thead tr{
+ 
+  border: 1px solid black;
+
+}.table1 thead th{
+  background-color: blue;
+            color: white;
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  border: 1px solid black;
+  margin: 2%;
+  padding: 10px 10px;
+}
+.table1 tbody tr{
+  height: 25px;
+  border: 1px solid black;
+
+
+}.table1 tbody td{
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  border: 1px solid black;
+  margin: 2%;
+  padding: 10px 10px;
+}
+.sec4 .table2{
+  border-collapse: collapse;
+  border: 2px;
+  margin: 4%;
+}
+
+.table2 thead th{
+  background-color: blue;
+            color: white;
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  border: 1px solid black;
+  margin: 2%;
+  padding: 10px 10px;
+ font-size: 120%
+  
+}.table2 tbody tr{
+  height: 25px;
+  border: 1px solid black;
+
+
+}.table2 tbody td{
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  border: 1px solid black;
+  margin: 2%;
+  padding: 10px 10px;
+  font-size: 120%;
+}
+.sec5{
+  background-color:aliceblue;
+margin: 2%;
+float: inline-end;
+position: relative;
+padding: 21px 35px;
+}
+.sec5 h3{
+text-align: center;
+}
+.sec5 .table3{
+  border-collapse: collapse;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px;
+  margin: 2%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  height: 100%;
+}
+.table3 thead tr{
+ border: 1px solid black;
+ text-align: center;
+}
+.table3 thead th{
+  background-color:blue;
+            color: white;
+ text-align: center;
+ width: 100px;
+ height: 25px;
+ border: 1px solid black;
+ margin: 2%;
+ padding: 10px 10px;
+}
+.table3 tbody tr{
+ height: 25px;
+ border: 1px solid black;
+
+}.table3 tbody td{
+ text-align: center;
+ width: 100px;
+ height: 25px;
+ border: 1px solid black;
+ margin: 2%;
+ padding: 10px 10px;
+}
+.sec6{
+  
+  background-color:white;
+}
+.sec6 h3{
+text-align: center;
+
+}
+.timetable {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .timetable th{
+            padding: 12px 8px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .timetable td{
+          padding: 12px 8px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .timetable th {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        .footer-section{
+  text-align: center;
+  background-color: rgb(39, 219, 57);
+  color: white;
+  font-size: 111%;
+}
+.footer-section li{
+  display:grid;
+  color:rgb(1, 174, 1);
+  flex-wrap: wrap;
+  list-style: none;
+  color: white;
+  text-align:left ;
+
+}
+@media (max-width: 768px) {
+            .header {
+                text-align: center;
+            }
+
+            .header img, .header h1 {
+                float: none;
+                display: block;
+                margin: 0 auto 10px;
+            }
+
+            .NAV li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+                margin: 15px 10px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .sec4{
+              float:none;
+            }
+            .sec5{
+              float:none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .NAV a {
+                padding: 8px 12px;
+                font-size: 1rem;
+            }
+
+            .sec1 h1 {
+                font-size: 1.5rem;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+        }
+
+        </style>
+        <title>APRENDO INTERNATIONAL</title>
+    </head>
+<body background="school logo.png">
+    <header class="header">
+        <P> <img src = "icons8-graduation-cap-48.png" >
+            <h1>APRENDO INTERNATIONAL</h1></P>
+        <nav class="NAV">
+        <ul>
+            <li><a href="home pg.html">HOME</a></li>
+            <li><a href="about us.html">ABOUT US</a></li>
+              <li><a href="acadaemics.html">ACADEMICS</a></li>
+              <li><a href="gallary.html">GALLARY</a></li>
+              <li><a href="news.html">NEWS & EVENTS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+          </nav>
+    </header>
+
+ <section class="sec1">
+  <h1> International School: Sample Subjects Offered (Grades 8–12)</h1>
+ </section>
+<section class="sec2">
+<h2>
+  Core Subjects
+</h2>
+<ul>
+  <h3>English Language & Literature
+  Mathematics (Standard or Advanced)
+  </h3>
+  <h3>
+    Science
+  </h3>
+<li>Biology</li>
+<li>Chemistry</li>
+<li>Physics</li>
+<h3>
+  Humanities
+</h3>
+<li>History / World History</li>
+<li>Geography</li>
+<li>Global Perspectives / Social Studies</li>
+<h3>
+  Foreign Languages
+</h3>
+<li>Spanish</li>
+<li>French</li>
+<li>Mandarin</li>
+<li>German</li>
+</ul>
+
+</section> 
+<section class="sec3">
+  <h2>
+    Optional Subjects
+  </h2>
+  <lu>
+<h3>
+  Technology & Innovation
+</h3>
+<li>Information & Communication Technology (ICT)</li>
+<li>Computer Science / Coding</li>
+<li>Robotics & AI (optional or club-based)</li>
+<li>Digital Media & Design</li>
+<h3>
+  Arts & Design
+</h3>
+<li>Visual Arts</li>
+<li>Performing Arts (Music, Drama)</li>
+<li>Design & Technology</li>
+  <h3>
+Physical Education & Wellness
+  </h3>
+  <li>Physical Education</li>
+  <li>Health & Well-being</li>
+  <li>Sports / Team Sports</li>
+
+  <h3>
+    Global Citizenship & Life Skills
+  </h3>
+  <li>Environmental Systems</li>
+  <li>Model United Nations (MUN)</li>
+  <li>Public Speaking & Debate</li>
+  <li>Personal, Social, and Health Education (PSHE)</li>
+  <li>Financial Literacy</li>
+  
+  </lu>
+
+</section>
+<section class="sec4">
+  <h3>YEAR, QUARTERLY FEE<h3></h3>
+<table class="table1">
+  <thead>
+  
+    <tr>
+      <th>1ST QUARTER</th>
+      <th>2ND QUARTER</th>
+      <th>3RD QUARTER</th>
+      <th>4TH QUARTER</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>JAN-MAR<BR>M15000.00</td>
+      <td>APR-JUN<BR>10000.00</td>
+        <td>JUL-SEP<BR>10000.00</td>
+          <td>OCT-DEC<BR>10000.00</td>
+          </tr>
+  </tbody>
+</table>
+<table class="table2">
+<thead>
+<tr>
+  <th>EXAM FEES</th>
+  <th>GRADE</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>M25000.00</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>40000.00</td>
+    <td>12</td>
+  </tr>
+</tbody>
+</table>
+</section>
+<section class="sec5">
+  <h3>YEAR EVENTS TIME TABLE</h3>
+  <table class="table3">
+  <thead>
+    <tr>
+      <th>1ST QUARTER</th>
+      <th>2ND QUARTER</th>
+      <th>3RD QUARTER</th>
+      <th>4TH QUARTER</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+      <td>Orientation</td>
+      <td>Easter Week</td>
+      <td>Sports day</td>
+      <td>Beauty contest</td>
+    </tr>  
+      <tr>
+      <td>Mid term</td>
+      <td>Winter exam</td>
+      <td>Independence exam</td>
+      <td>Mock exam</td>
+    </tr> 
+       <tr>
+      <td>Easter holiday</td>
+      <td>Winter holidays</td>
+      <td>Independence holiday</td>
+      <td>Final exam</td>
+    </tr>
+    <tr>
+      <td>Valentine </td>
+      <td>Science fair</td>
+      <td>Ballerina </td>
+      <td>Prom </td>
+    </tr>
+    <tr>
+      <td>Cultural day</td>
+      <td>Debate & spelling bee</td>
+      <td>Career day</td>
+      <td>Festive holiday</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<section class="sec6">
+  <h3>SAMPLE WEEKLY TIMETABLE (GRADE 10)</h3>
+  <table class="timetable">
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td >08:00–09:00</td>
+            <td >Math</td>
+            <td >Science</td>
+            <td >English</td>
+            <td >Humanities</td>
+            <td >Math</td>
+        </tr>
+        <tr>
+            <td >09:00–10:00</td>
+            <td >English</td>
+            <td >ICT</td>
+            <td >Science</td>
+            <td >Math</td>
+            <td >Foreign Lang</td>
+        </tr>
+        <tr>
+            <td >10:00–10:15</td>
+            <td  colspan="5">Break</td>
+        </tr>
+        <tr>
+            <td >10:15–11:15</td>
+            <td >Science</td>
+            <td >Math</td>
+            <td >Foreign Lang</td>
+            <td >English</td>
+            <td >Science</td>
+        </tr>
+        <tr>
+            <td >11:15–12:15</td>
+            <td >Humanities</td>
+            <td >Foreign Lang</td>
+            <td >Humanities</td>
+            <td >ICT</td>
+            <td >Arts</td>
+        </tr>
+        <tr>
+            <td >12:15–13:00</td>
+            <td  colspan="5">Lunch</td>
+        </tr>
+        <tr>
+            <td >13:00–14:00</td>
+            <td >P.E.</td>
+            <td >Arts</td>
+            <td >PSHE</td>
+            <td >Global Studies</td>
+            <td >P.E.</td>
+        </tr>
+        <tr>
+            <td >14:00–15:00</td>
+            <td >Design Tech</td>
+            <td >Drama</td>
+            <td >MUN/Clubs</td>
+            <td >Health Ed.</td>
+            <td >Robotics</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+<footer class="footer-section">
+  
+        
+      <p>© Aprendo International. All rights reserved.</p>
+      <ul>
+        <li> Monehela Malebapo student # 901019883</li>
+        <li>Katleho Jankie student # 901019922</li>
+        <li>Tlhohonolofatso Ranthimo student # 901019938</li>
+        <li>Atang Mokabo student # 901019849</li>
+        <li>Mahanetsa 'Masentle student # 901019863</li>
+        <li>Mohale Maphokoane student # 90101</li>
+        </ul>
+        
+    </footer>
+
+</body>
+</html>
